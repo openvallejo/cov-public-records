@@ -9,12 +9,12 @@ properties:
     type: string
     format: uri
     description: The URL of the site to start scraping
-    default: https://vallejo.nextrequest.com/documents
+    default: https://granicusarchive.cityofvallejo.net/archives/City%20Council/
   project:
     type: number
     description: >-
       The DocumentCloud project ID of the project the documents should be uploaded in to
-    default: 207777
+    default: 207780
   keywords:
     type: array
     items:
