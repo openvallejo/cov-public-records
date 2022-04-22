@@ -9,20 +9,20 @@ properties:
     type: string
     format: uri
     description: The URL of the site to start scraping
-    default: https://www.ssa.gov/foia/readingroom.html
+    default: https://vallejo.nextrequest.com/documents
   project:
     type: number
     description: >-
       The DocumentCloud project ID of the project the documents should be uploaded in to
-    default: 207338
+    default: 207777
   keywords:
     type: array
     items:
       type: string
     description: Keywords to search and notify on
     default:
-      - court
-      - foia
+      - badge
+      - open vallejo
   filetypes:
     type: array
     items:
@@ -32,7 +32,7 @@ properties:
   crawl_depth:
     type: number
     description: How many pages away from the first site to scrape from
-    default: 1
+    default: 3
   dry_run:
     type: boolean
     description: Do not upload any documents or store any scraping data
